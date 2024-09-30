@@ -1,0 +1,27 @@
+const POLE_HEIGHT = 300;
+const POLE_WIDTH = 10;
+const FLAG_HEIGHT = 150;
+const FLAG_WIDTH = 300;
+
+// Create your flag const variables here
+
+function main() {
+    drawFlagPole();
+    drawFlag();
+}
+
+function drawFlagPole() {
+    let rect = new Rectangle(POLE_WIDTH, POLE_HEIGHT);
+    rect.setPosition(50, 50);
+    rect.setColor("blue");
+    add(rect); // Add rectangle
+}
+
+function drawFlag() {
+    let rect = new Rectangle(FLAG_WIDTH, FLAG_HEIGHT);
+    rect.setPosition(70, 50);
+    rect.setColor("blue");
+    add(rect); // Add rectangle
+}
+
+main();
